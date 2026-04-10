@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Velocidad Total</title>
+
+	<style>
+		body{
+			font-family: helvetica, sans-serif;
+			background-color: #f4f4f4;
+			text-align: center;
+		}
+
+		h1{
+			font-family: helvetica;
+			font-weight: bold;
+			line-height: 1.0px;
+		}
+
+		h2{
+			font-family: helvetica;
+			font-size: 15px;
+		}
+		a{
+			text-decoration: none;
+			color: #ff5e03;
+			
+		}
+		#banner{
+			width: 100%;
+			border-radius: 15px;
+			box-shadow: 0px 4px 5px rgba(0, 0, 0, 1.0);
+		}
+
+		#menu ul {
+			display: flex;
+			margin: 0;
+			padding: 0;
+			background-color: #FE9A37;
+			list-style-type: none;
+			justify-content: center;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		.menu-item {
+			display: flex;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.menu-item a {
+    	display: block;
+    	color: white;
+    	text-align: center;
+    	padding: 10px 20px; /* Espaciado interno */
+    	text-decoration: none; /* Quita el subrayado */
+    	font-family: helvetica;
+    	font-weight: bold;
+
+    	}
+
+
+		.producto{
+			background: white;
+			padding: 20px;
+			border-radius: 10px;
+			width: 200px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.producto h4 {
+            font-family: helvetica;
+            margin: 10px 0;
+        }
+
+		.precio{
+			color: green;
+			font-size: 15px;
+			margin: 10px 0px;
+			font-weight: bold;
+		}
+
+		.container{
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			margin-top: 30px;
+		}
+
+		.container img{
+			width: 100%;
+        	border-radius: 5px;
+		}
+		
+		.precio-antes {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .precio-ahora {
+            color: #e44d26;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+		.boton-comprar{
+			background-color: #FE9A37;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+		}
+
+		.boton-comprar:hover {
+            background-color: #d17a2a;
+        }
+
+		
+	</style>
+</head>
+<body>
+	<img id="banner" src="Recursos/banner_tiendadeportiva.png">
+	<br><br>
+
+	<div>
+	<h1>VELOCIDAD TOTAL</h1>
+	<hr style="width: 80%;">
+	<h2>TU TIENDA DE DEPORTES ONLINE</h2>
+	<br>
+	</div>
+
+	<div>
+		<nav id="menu">
+  	<ul>
+    <li class="menu-item"><a href="index.html">Inicio</a></li>
+    <li class="menu-item"><a href="s011_quienessomos.html">Conócenos</a></li>
+    <li class="menu-item"><a href="s011_productos.html">Productos</a></li>
+    <li class="menu-item"><a href="s011_servicioalcliente.html">Asistencia</a></li>
+    <li class="menu-item"><a href="s011_contacta.html">Contacto</a></li>
+  	</ul>
+		</nav>
+	</div>
+	<br>
+	<h3>DESCUBRE NUEVOS CAMINOS</h3>
+	<div class="container">
+		<div class="producto">
+			<img src="Recursos/zapatillas-running.webp" width="200px" alt="Zapatillas Puma">
+			<h2>Zapatillas Running Deviate Nitro 4</h2>
+			<p class="precio-antes">200€</p>
+			<p class="precio-ahora">160€</p>
+			<button class="boton-comprar">Ver Detalles</button>
+		</div>
+		<div class="producto">
+			<img src="Recursos/mochila-25l.webp" alt="Mochila Oakley">
+			<h4>Mochila Road Trip Terrain RC 25L</h4>
+			<p class="precio-antes">180€</p>
+			<p class="precio-ahora">117.9€</p>
+			<button class="boton-comprar">Ver Detalles</button>
+		</div>
+		<div class="producto">
+			<img src="Recursos/bicicleta-de-carretera.webp" alt="Giant Bicicleta de carretera Defy">
+			<h4>Bicicleta de carretera Defy Advanced 2</h4>
+			<p class="precio-antes">2598.99€</p>
+			<p class="precio-ahora">2339.09 €</p>
+			<button class="boton-comprar">Ver Detalles</button>
+		</div>
+	</div>
+	<br>
+	<h3>Mira nuestros <a href="s011_productos.html">productos</h3>
+
+</body>
+</html>
